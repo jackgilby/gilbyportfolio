@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shopping</title>
+<link rel="stylesheet" type="text/css" href="shopstyle.css">
+</head>
+
+<body>
+	<header>
+			<a href="shoplanding.html"><img src="razerlogo.png" class = "logo"></a>
+			<div class="toggle" onclick="toggleMenu()"></div>
+			<ul class="navigation">
+				<li><a href="shoplanding.html">Home</a></li>
+				<li><a href="shoppingsite.html">Products</a></li>
+				<li><a href="https://www.razer.com/">Razer Site</a></li>
+			</ul>
+	</header>
+	<section>
+	<div class="container">
+		<div class = "card">
+			<div class = "imgbox">
+				<img src = "razer14.png">
+			</div>
+			<div class = "contentBox">
+				<h2>Razer Stealth</h2>
+			<div class = "size">
+				<h3>Hard Drive</h3>
+				<span>256GB</span>
+				<span>500GB</span>
+				<span>1TB</span>
+			</div>
+			<a href="https://www.razer.com/">Buy Now</a>
+			</div>
+		</div>
+		<div class = "card">
+			<div class = "imgbox">
+				<img src = "razermouse.png">
+			</div>
+			<div class = "contentBox">
+				<h2>Deathadder</h2>
+			<div class = "size">
+				<h3>Colors</h3>
+				<span>RGB</span>
+				<span>Base</span>
+			</div>
+			<a href="https://www.razer.com/">Buy Now</a>
+			</div>
+		</div>
+		<div class = "card">
+			<div class = "imgbox">
+				<img src = "razerkeyboard.png">
+			</div>
+			<div class = "contentBox">
+				<h2>Chroma</h2>
+			<a href="https://www.razer.com/">Buy Now</a>
+			</div>
+		</div>
+		<div class = "card">
+			<div class = "imgbox">
+				<img src = "razerkraken.png">
+			</div>
+			<div class = "contentBox">
+				<h2>Kraken</h2>
+			<a href="https://www.razer.com/">Buy Now</a>
+			</div>
+		</div>
+	</div>
+	</section>
+	<script>
+	function toggleMenu(){
+		const menuToggle = document.querySelector('.toggle');
+		const navigation = document.querySelector('.navigation');
+		menuToggle.classList.toggle('active')
+		navigation.classList.toggle('active')
+	}
+	</script>
+</body>
+</html>

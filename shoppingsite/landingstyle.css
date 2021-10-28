@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+section{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #131313;
+}
+
+section .circle{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #3EBE2F;
+	clip-path: circle(50% at 90% 45%);
+}
+
+/*---------- Header ----------*/
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-tiems: center;
+	animation: transitionIn 1s;
+}
+
+@keyframes transitionIn{
+	from{
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	to{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+header .logo{
+	position: relative;
+	max-width: 50px;
+}
+
+header .navigation{
+	position: relative;
+	display: flex;
+}
+
+header .navigation li{
+	list-style: none;
+}
+
+header .navigation li a{
+	display: inline-block;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.5em;
+	text-decoration: none;
+	margin-left: 50px;
+	padding-right: 10px;
+	transition: 0.5s;
+}
+header .navigation li a:hover{
+	opacity: 0.65;
+}
+/*--------- Text Content ----------*/
+
+.content{
+	position: relative; 
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content .textBox{
+	position: relative;
+	max-width: 600px;
+	margin-left: 40px;
+}
+
+.content .textBox h2{
+	color: #fff;
+	font-size: 3em;
+	margin-bottom: 10px;
+	line-height: 1.4em;
+	font-weight: 700;
+}
+
+.content .textBox p{
+	color: #fff;
+}
+
+.content .textBox a{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	background: #248c18;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-decoration: none;
+	opacity: 80%;
+	transition: 0.5s;
+}
+
+.content .textBox a:hover{
+	opacity: 1;
+}
+
+
+/* ---------- Slider ----------*/
+.swiper {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+}
+.content .imgBox{
+	width: 700px;
+	display: flex;
+	justify-content: flex-end;
+	animation: transitionIn 1s;
+}
+
+
+/*---------- Mobile ---------*/
+@media (max-width: 991px){
+	header{
+		padding: 40px;
+	}
+	
+	section{
+		padding: 150px 40px;
+		
+	}
+	
+	.content{
+		flex-direction: column;
+	}
+	
+	.ocontent .imgBox,
+	.content .textBox{
+		max-width: 100%;
+	}
+	
+	.swiper-slide{
+		height: 300px;
+	}
+	
+	header .navigation{
+		display: none;
+	}
+	
+	header .navigation.active{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #9bdc28;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		z-index: 10;
+	}
+	
+	header .navigation li a{
+		margin: 10px;
+		font-size: 1.5em;
+		font-weight: 300;
+	}
+	
+	.toggle{
+		position: relative;
+		width: 30px;
+		height: 30px;
+		background: url("shoe.png");
+		background-size: 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+		z-index: 10000;
+		padding-right: 30px;
+	}
+	.toggle.active{
+		position: fixed;
+		right: 40px;
+		background: url(close.png);
+		background-size: 25px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	section .circle{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #3EBE2F;
+	clip-path: circle(55% at 50% 20%);
+}
+}
