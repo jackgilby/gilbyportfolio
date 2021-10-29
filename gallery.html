@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="gallerystyle.css">
+<title>Home</title>
+</head>
+	
+<body>
+	<section class="header">
+		<a href="index.html" class="logo"><h2>GILBY.</h2></a>
+		<div class="toggle" onclick="toggleMenu()"></div>
+			<ul class="navigation">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+	</section>
+	
+	<section class="banner">
+		<img src="art/art_bluetree.jpg" class="fitBg">
+		<div class="content">
+			<h2>GALLERY</h2>
+			<p><br>Showcase of miscellaneous art.<br>Under construction.</p>
+		</div>
+	</section>
+	
+	<section>
+		<div class="gallery">
+			<a href="art/art_gameboy.png"><img src="art/art_gameboy_small.png"></a>
+			<a href="art/art_walkway_small.png"><img src="art/art_walkway_small.png"></a>
+			<a href="designs/CandyRepeat.png"><img src="designs/small.png"></a>
+			<a href="designs/CansRenderIllu.png"><img src="designs/CansRenderIllu_small.png"></a>
+			<a href="designs/flyer-01.png"><img src="designs/flyer_small.png"></a>
+			<a href="designs/postcard1.jpg"><img src="designs/postcard1_small.jpg"></a>
+			<a href="designs/postcard2.jpg"><img src="designs/postcard2_small.jpg"></a>
+			<a href="designs/saviorposter.png"><img src="designs/saviorposter_small.png"></a>
+			<a href="illustration/JackGilbert_CoverupFinal.jpeg"><img src="illustration/urban_small.jpg"></a>
+			<a href="illustration/monogram1.jpg"><img src="illustration//monogram_small.jpg"></a>
+			<a href="illustration/JackGilbert_Final.jpeg"><img src="illustration/wild_small.jpg"></a>
+		</div>
+	</section>
+	
+	<script>
+	function toggleMenu(){
+		const menuToggle = document.querySelector('.toggle');
+		const navigation = document.querySelector('.navigation');
+		menuToggle.classList.toggle('active')
+		navigation.classList.toggle('active')
+	}
+	</script>
+</body>
+</html>
