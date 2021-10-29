@@ -186,6 +186,16 @@ section{
 	min-height: 500px;
 }
 
+.fitBgClearAbout{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 25%;
+}
+
 /* ---------- Banner 2 ---------- */
 .banner2,
 .banner3{
