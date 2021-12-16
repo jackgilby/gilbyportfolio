@@ -238,6 +238,11 @@ section{
 	z-index: 1;
 	background: linear-gradient(to bottom, #111, transparent);
 }
+.banner2 .content h2{
+	color: #fff;
+	font-size: 5em;
+	animation: h2transitionIn 1s;
+}
 
 /* ---------- Compilation ---------- */
 .compilation{
