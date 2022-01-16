@@ -155,7 +155,7 @@ ul.primary-nav{
 	background: url("images/tree1.png");
 	background-repeat: no-repeat;
 	left: 0em;
-	top: -33em;
+	top: -0em;
 	z-index: -1;
 	overflow: hidden;
 }
@@ -247,20 +247,6 @@ ul.primary-nav{
 /*-------------------- MY WORKS SECTION --------------------*/
 .myworks-section{
 	background: #4E616C;
-}
-
-.myworks-section:before{
-	content: '';
-	position: absolute;
-	width: 100%;
-	margin: auto;
-	height: 150%;
-	background: url("images/tree1.png");
-	background-repeat: no-repeat;
-	right:0em;
-	top: 25em;
-	z-index: -1;
-	overflow: hidden;
 }
 
 .myworks-ul{
@@ -433,18 +419,6 @@ ul.primary-nav{
 		width: 50%;
 	}
 	
-	.myworks-section:before{
-		content: '';
-		position: absolute;
-		width: 100%;
-		margin: auto;
-		height: 100%;
-		background: url("images/tree1.png");
-		background-repeat: no-repeat;
-		left:0em;
-		top: 20em;
-		z-index: -1;
-	}
 	
 	.about-right{
 		width: 70%;
@@ -461,8 +435,8 @@ ul.primary-nav{
 		height: 150%;
 		background: url("images/tree1.png");
 		background-repeat: no-repeat;
-		left:-15em;
-		top: -30em;
+		left:0em;
+		top: -20em;
 		z-index: -1;
 	}
 	.container{
@@ -484,18 +458,6 @@ ul.primary-nav{
 		margin: auto;
 	}
 	
-	.myworks-section:before{
-		content: '';
-		position: absolute;
-		width: 100%;
-		margin: auto;
-		height: 100%;
-		background: url("images/tree1.png");
-		background-repeat: no-repeat;
-		left:0em;
-		top: 20em;
-		z-index: -1;
-	}
 	
 	.about-section .container{
 		display: flex;
