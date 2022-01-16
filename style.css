@@ -260,7 +260,7 @@ ul.primary-nav{
 	border-radius: 2em;
 	margin-left: auto;
 	margin-right: auto;
-	width: 20em;
+	width: 15em;
 	cursor: pointer;
 }
 
@@ -272,9 +272,10 @@ ul.primary-nav{
 }
 
 .works-img{
-	width: 15em;
-	height: 15em;
+	width: 10em;
+	height: 10em;
 	border-radius: 2em;
+	padding: 1em;
 }
 
 @keyframes workshovering{
