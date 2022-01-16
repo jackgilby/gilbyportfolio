@@ -407,7 +407,7 @@ ul.primary-nav{
 	.hero:before{
 		content: '';
 		position: absolute;
-		width: 130%;
+		width: 100%;
 		margin: auto;
 		height: 150%;
 		background: url("images/tree1.png");
