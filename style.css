@@ -155,7 +155,7 @@ ul.primary-nav{
 	background: url("images/tree1.png");
 	background-repeat: no-repeat;
 	left: 0em;
-	top: -33em;
+	top: -10em;
 	z-index: -1;
 	overflow: hidden;
 }
@@ -249,19 +249,6 @@ ul.primary-nav{
 	background: #4E616C;
 }
 
-.myworks-section:before{
-	content: '';
-	position: absolute;
-	width: 100%;
-	margin: auto;
-	height: 150%;
-	background: url("images/tree1.png");
-	background-repeat: no-repeat;
-	right:0em;
-	top: 25em;
-	z-index: -1;
-	overflow: hidden;
-}
 
 .myworks-ul{
 	padding: 1em;
