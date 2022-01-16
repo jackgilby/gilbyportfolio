@@ -314,13 +314,13 @@ ul.primary-nav{
 	.hero:before{
 		content: '';
 		position: absolute;
-		width: 130%;
+		width: 100%;
 		margin: auto;
 		height: 150%;
 		background: url("images/tree1.png");
 		background-repeat: no-repeat;
 		left:-30em;
-		top: -30em;
+		top: -0em;
 		z-index: -1;
 	}
 	
@@ -421,16 +421,5 @@ ul.primary-nav{
 		margin: auto;
 	}
 	
-	.gallery-1:before{
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: url("images/tree1.png");
-		background-repeat: no-repeat;
-		right: 0em;
-		top: 20em;
-		z-index: -1;
-	}
 	
 }
