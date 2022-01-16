@@ -1,0 +1,436 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+/* CSS Document */
+
+body{
+	background: #3A4445;
+	margin: 0;
+	font-family: 'Poppins';
+}
+
+section{
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+ul{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+/*------------------ LOADER -------------------*/
+.loader-wrapper {
+	z-index: 1000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #3A4445;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+	
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+/*------------------ HEADER -------------------*/
+.navbar{
+	padding: 1em 2em;
+	animation-name: dropdown;
+	animation-duration: 3s;
+}
+
+@keyframes dropdown{
+	from{
+		margin-top: 10em;
+	}
+	to{
+		margin-top: 0;
+	}
+}
+
+.navbar .logo{
+	text-decoration: none;
+	/* Font Weight */
+	color: white;
+	font-size: 1.75em;
+	width: 20px;
+	font-weight: 700;
+}
+
+.navbar nav{
+	display: none;
+}
+
+.navbar .container{
+	display: flex;
+	place-content: space-between;
+}
+
+.navbar .mobile-menu{
+	cursor: pointer;
+}
+
+.current{
+	font-weight:700;
+	opacity: 75%;
+}
+
+/*----------------- BUILDING NAV ----------------*/
+nav.menu-btn{
+	display: block;
+}
+
+nav{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	right: 0;
+	top: 0;
+	background :#4E616C;
+	height: 100vh;
+	padding: 1em;
+}
+
+ul.primary-nav{
+	margin-top: 5em; 
+}
+
+.nav-a{
+	color: white; 
+	text-decoration: none;
+	display: block;
+	padding: 1em;
+	font-size: 1.5em;
+	text-align: right;
+	cursor: pointer;
+}
+
+.nav-a:hover{
+	opacity: 75%;
+}
+
+.mobile-menu-exit{
+	float:right;
+	margin-right: 1em;
+	cursor: pointer;
+}
+
+/*--------------------- HERO ------------------------*/
+
+.left-col{
+	border-style: solid;
+	border-color: white;
+	padding: 1em;
+	margin: auto;
+	width: 50%;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	background: #3A4445;
+}
+
+.left-col .herohead{
+	line-height: 1.2em;
+	color: white;
+	border-style: solid;
+	border-top:none;
+	border-right: none;
+	border-left: none;
+	border-width: thin;
+	padding-bottom: 0.5em;
+	font-weight: 400;
+	
+}
+
+.left-col .subhead{
+	color: white;
+	font-weight: 100;
+}
+
+.left-col .primary-cta{
+	border: 3px solid white;
+	text-decoration: none;
+	border-radius: 5em;
+	padding: .3em 0.8em;
+	display:inline-block;
+	color: white;
+	cursor: pointer;
+}
+
+.left-col .primary-cta:hover{
+	cursor: pointer;
+	background: white;
+	color: #3a4445;
+	animation-name: whiteanimation;
+	animation-duration: 1s;
+}
+
+
+.hero-img{
+	width: 90%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.hero:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	margin: auto;
+	height: 150%;
+	background: url("images/tree1.png");
+	background-repeat: no-repeat;
+	left: 0em;
+	top: -33em;
+	z-index: -1;
+	overflow: hidden;
+}
+
+/*--------------------- Gallery Img Left ------------------*/
+.gallery-1:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	margin: auto;
+	height: 150%;
+	background: url("images/tree1.png");
+	background-repeat: no-repeat;
+	right:0em;
+	top: 25em;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.gallery-2{
+	background: #3A4445;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.gallery-1{
+	background: #4E616C;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.gallery-img{
+	width: 100%;
+	margin: auto;
+}
+
+.gallery-content{
+	color: white;
+}
+
+.gallery-p{
+	font-weight: 100;
+}
+
+.project-cta{
+	border:3px solid white;
+	text-decoration: none;
+	border-radius: 5em;
+	padding: .3em 0.8em;
+	display:inline-block;
+	color: white;
+}
+
+.project-cta:hover{
+	cursor: pointer;
+	background: white;
+	color: #3a4445;
+	animation-name: whiteanimation;
+	animation-duration: 1s;
+}
+
+@keyframes whiteanimation{
+	from{
+		color: white;
+	}
+	to{
+		background: white;
+		color:#3A4445;
+	}
+}
+
+
+/*------------------- Gallery 2 ---------------------*/
+
+@media only screen and (min-width:768px){
+	.mobile-menu, .mobile-menu-exit{
+		display: none;
+	}
+	
+	.navbar .container{
+		display: grid;
+		grid-template-columns: 180px auto;
+	}
+	
+	.navbar nav{
+		display: flex;
+		justify-content: space-between;
+		background:none;
+		position: unset;
+		height: auto;
+		width:100%;
+		padding: 0;
+	}
+	.primary-nav{
+		display: flex;
+	}
+	ul.primary-nav{
+		margin:0;
+	}
+	.nav-a{
+		font-size: 1em;
+		padding-bottom: 0;
+		padding-top: 0.5em;
+	}
+	
+	.hero:before{
+		content: '';
+		position: absolute;
+		width: 130%;
+		margin: auto;
+		height: 150%;
+		background: url("images/tree1.png");
+		background-repeat: no-repeat;
+		left:-30em;
+		top: -30em;
+		z-index: -1;
+	}
+	
+	.hero-img{
+		width: 65%;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	.myworks-ul{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	
+	.myworks-li{
+		
+	}
+	
+	.left-col{
+		width: 50%;
+	}
+	
+	.gallery-1:before{
+		content: '';
+		position: absolute;
+		width: 100%;
+		margin: auto;
+		height: 100%;
+		background: url("images/tree1.png");
+		background-repeat: no-repeat;
+		left:0em;
+		top:40em;
+		z-index: -1;
+	}
+	
+	.gallery-content{
+		color: white;
+		width: 70%;
+		margin: auto;
+	}
+}
+
+@media only screen and (min-width: 1080px){
+	.container{
+		width: 1080px;
+		margin: 0 auto;
+	}
+	.left-col{
+		width:100%;
+	}
+	
+	.hero .container{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.hero-img{
+		width: 100%;
+	}
+	
+	.left-col{
+		margin: auto;
+		width: 72%;
+	}
+	
+	.right-col{
+		width: 100%;
+	}
+	
+	.gallery-1 .container{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.gallery-2 .container{
+		display: flex;
+		justify-content: space-between;
+	}
+	.gallery-content{
+		width: 100%;
+		padding-left: 5em;
+		padding-right: 2em;
+		margin: auto;
+		border-style: solid;
+		border-top:none;
+		border-bottom: none;
+		border-right: none;
+		border-width: thin;
+		margin-left: 7em;
+		padding-top: 0;
+	}
+	.gallery-img{
+		width: 95%;
+		margin: auto;
+	}
+	
+	.gallery-1:before{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: url("images/tree1.png");
+		background-repeat: no-repeat;
+		right: 0em;
+		top: 20em;
+		z-index: -1;
+	}
+	
+}

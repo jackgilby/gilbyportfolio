@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<script src="jquery-3.6.0.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+	
+<body>
+	<!-- LOADER -->
+	<div class="loader-wrapper">
+		<span class="loader"><span class="loader-inner"></span></span>
+	</div>
+	<!-- HEADER -->
+	<div class="navbar">
+		<div class="container">
+			<a class="logo" href="#">GILBY.</a>
+			<img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+			<nav>
+				<img id="mobile-exit" class="mobile-menu-exit" src="images/close.svg" alt="Close Navigation">
+				<ul class="primary-nav">
+					<li class="current"><a class="nav-a" href="index.html">Home</a></li>
+					<li><a class="nav-a" href="designs.html">Designs</a></li>
+					<li><a class="nav-a" href="uxui.html">UX/UI</a></li>
+					<li><a class="nav-a" href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	<section class="hero">
+		<div class="container">
+			<div class="left-col">
+				<h2 class=herohead>Product Design,<br>UX/UI Design.</h2>
+				<p class="subhead">A Graphic Design and Interactive Media student with a minor in Computer sciences creating work in design, interface design and illustration.</p>
+				<div class="hero-cta">
+					<a href="#works" class="primary-cta">Projects.</a>
+				</div>
+			</div>
+			<div class="right-col">
+				<img src="images/heroimage.png" class="hero-img" alt="Colored Portrait">
+			</div>
+		</div>
+	</section>
+	
+	<section class="myworks-section">
+		<div class="container">
+			<ul id="works" class="myworks-ul">
+				<a href="designs.html"><li class="myworks-li">
+					<img class="works-img" src="images/designicon.png" alt="Poster Design">
+					<br><a class="myworks-a" href="designs.html">Design.</a>
+				</li></a>
+				<a href="uxui.html"><li class="myworks-li">
+					<img class="works-img" src="images/uiicon.png" alt="UX UI Design">
+					<br><a class="myworks-a" href="uxui.html">UX/UI.</a>
+				</li></a>
+			</ul>	
+		</div>
+	</section>
+	
+	<section class="about-section">
+		<div class="container">
+			<div class="about-left">
+				<img class="about-img" src="images/gilbyportrait.png" alt="Gilby Portrait">
+			</div>
+			<div class="about-right">
+				<h1 class="about-heading">Jack Gilbert</h1>
+				<p class="about-content">Pursuing a degree in Graphic Design and Interactive Media at UW-Stout. Work experience includes Web Development, Event Technology, and Quality Assurance Testing. <br><br>Credited in AAA video game titles including Call of Duty: Modern Warfare (2019), Call of Duty: Warzone and Call of Duty Black Ops: Cold War.<br><br>Based out of the Minneapolis and Dunn County area. Seeking internships in UX/UI design, product design and video game design.</p>
+				<div class="about-cta">
+					<a href="about.html" class="contact-cta">Learn More.</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<script>
+		$(window).on("load",function(){
+			$(".loader-wrapper").fadeOut("slow");
+		});
+	</script>
+	
+	<script>
+		const mobileBtn = document.getElementById('mobile-cta')
+			nav = document.querySelector('nav')
+			mobileBtnExit = document.getElementById('mobile-exit');
+		
+		mobileBtn.addEventListener( 'click', () => {
+			nav.classList.add('menu-btn');
+		})
+		mobileBtnExit.addEventListener('click',() => {
+			nav.classList.remove('menu-btn');
+		})
+	</script>
+	
+</body>
+</html>

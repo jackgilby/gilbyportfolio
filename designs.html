@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="gallery.css">
+	<script src="jquery-3.6.0.js"></script>
+</head>
+
+<body>
+	<!-- LOADER -->
+	<div class="loader-wrapper">
+		<span class="loader"><span class="loader-inner"></span></span>
+	</div>
+	
+	<div class="navbar">
+		<div class="container">
+			<a class="logo" href="index.html">GILBY.</a>
+			<img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+			<nav>
+				<img id="mobile-exit" class="mobile-menu-exit" src="images/close.svg" alt="Close Navigation">
+				<ul class="primary-nav">
+					<li><a class="nav-a" href="index.html">Home</a></li>
+					<li class="current"><a class="nav-a" href="index.html">Designs</a></li>
+					<li><a class="nav-a" href="uxui.html">UX/UI</a></li>
+					<li><a class="nav-a" href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	<section class="hero">
+		<div class="container">
+			<div class="right-col">
+				<img src="images/postermockups-01.png" class="hero-img" alt="Colored Portrait">
+			</div>
+			<div class="left-col">
+				<h2 class=herohead>Designs.</h2>
+				<p class="subhead">Featuring unique designs focused on bold illustraive aspects and conveying brand identity to the audience.</p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="gallery-1">
+		<div class="container">
+			<div class="gallery-img">
+				<img src="images/iDSMockup.png" class="gallery-img" alt="iD Mockup">
+			</div>
+			<div class="gallery-content">
+				<h2 class="gallery-h2">iD Software Rebrand</h2>
+				<p class="gallery-p">This rebranding project was created for a Graphic Design II course that asked students to pick a company for a comprehensive redesign. iD Software is a video game company well known for the DOOM franchise of games. The rebranding focused on creating a brand image that conveys the gritty style of their games while retaining a contemporary look. Aspects of the project were done using Adobe Illustrator, Photoshop and XD. The linked PDF includes the proposal, ideation, sketches, the branding guide, and the mockups.</p>
+				<div class="gallery-cta">
+					<a href="pdf/idSoftware.pdf" class="project-cta">View PDF.</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="gallery-2">
+		<div class="container">
+			<div class="gallery-img">
+				<img src="images/posterpyramid.png" class="gallery-img" alt="iD Mockup">
+			</div>
+			<div class="gallery-content">
+				<h2 class="gallery-h2">.AR Posters</h2>
+				<p class="gallery-p">These poster designs were created for a poster series focused on advertising AR technology. The series focuses on demonstrating the abilities AR provides in a professional setting by displaying striking photoshop mockups and dynamic type treatment. The designs were created using Adobe Illustrator and Photoshop. Linked PDF includes the full sized files for each poster. This project will be displayed in UW-Stout’s Furlong Gallery during Spring 2022. </p>
+				<div class="gallery-cta">
+					<a href="pdf/poster.pdf" class="project-cta">View PDF.</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="gallery-1">
+		<div class="container">
+			<div class="gallery-img">
+				<img src="images/faygocans.png" class="gallery-img" alt="Faygo Redesign">
+			</div>
+			<div class="gallery-content">
+				<h2 class="gallery-h2">Faygo Redesign</h2>
+				<p class="gallery-p">The Faygo redesign was created for a design class that tasked students with creating a new brand identity and packaging design. The featured mockups include a new logo treatment along with an illustration heavy design that conveys the playful and bold nature of the Faygo brand. The mockups were created using Adobe XD, and the designs were created using Adobe Photoshop and Illustrator. The linked PDF includes the process book that features ideation sketches, design drafts and alternate mockups. </p>
+				<div class="gallery-cta">
+					<a href="pdf/Faygo.pdf" class="project-cta">View PDF.</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<script>
+		$(window).on("load",function(){
+			$(".loader-wrapper").fadeOut("slow");
+		});
+	</script>
+	
+	<script>
+		const mobileBtn = document.getElementById('mobile-cta')
+			nav = document.querySelector('nav')
+			mobileBtnExit = document.getElementById('mobile-exit');
+		
+		mobileBtn.addEventListener( 'click', () => {
+			nav.classList.add('menu-btn');
+		})
+		mobileBtnExit.addEventListener('click',() => {
+			nav.classList.remove('menu-btn');
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="gallery.css">
+	<script src="jquery-3.6.0.js"></script>
+</head>
+
+<body>
+	<!-- LOADER -->
+	<div class="loader-wrapper">
+		<span class="loader"><span class="loader-inner"></span></span>
+	</div>
+	
+	<div class="navbar">
+		<div class="container">
+			<a class="logo" href="index.html">GILBY.</a>
+			<img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+			<nav>
+				<img id="mobile-exit" class="mobile-menu-exit" src="images/close.svg" alt="Close Navigation">
+				<ul class="primary-nav">
+					<li><a class="nav-a" href="index.html">Home</a></li>
+					<li><a class="nav-a" href="designs.html">Designs</a></li>
+					<li class="current"><a class="nav-a" href="uxui.html">UX/UI</a></li>
+					<li><a class="nav-a" href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	<section class="hero">
+		<div class="container">
+			<div class="right-col">
+				<img src="images/uiheromockup.png" class="hero-img" alt="Colored Portrait">
+			</div>
+			<div class="left-col">
+				<h2 class=herohead>UX/UI.</h2>
+				<p class="subhead">Designing content for the technology of today. Creating UI/UX mockups, webpages and demos for phone, tablet, desktop and more.</p>
+				
+			</div>
+		</div>
+	</section>
+	
+	<section class="gallery-1">
+		<div class="container">
+			<div class="gallery-img">
+				<img src="images/uimockup.png" class="gallery-img" alt="iD Mockup">
+			</div>
+			<div class="gallery-content">
+				<h2 class="gallery-h2">iD Software Website</h2>
+				<p class="gallery-p">This project was created for a Graphic Design II class as a redesign for the video game company iD software, most well-known for the DOOM franchise and RAGE franchise. This project shows a mockup for a new website design that’s focused on showing the video games that the company is most well known for. Features both a mobile and desktop version as well as utilizing a redesigned logo and color scheme. Created in Adobe XD. </p>
+				<div class="gallery-cta">
+					<a href="#" class="project-cta">View PDF.</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="gallery-2">
+		<div class="container">
+			<div class="gallery-img">
+				<img src="images/homecomingmockup.png" class="gallery-img" alt="iD Mockup">
+			</div>
+			<div class="gallery-content">
+				<h2 class="gallery-h2">.AR Posters</h2>
+				<p class="gallery-p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+				<div class="gallery-cta">
+					<a href="https://bdpstout.com/homecoming/2021/index.html" class="project-cta">View Site.</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<script>
+		$(window).on("load",function(){
+			$(".loader-wrapper").fadeOut("slow");
+		});
+	</script>
+	
+	<script>
+		const mobileBtn = document.getElementById('mobile-cta')
+			nav = document.querySelector('nav')
+			mobileBtnExit = document.getElementById('mobile-exit');
+		
+		mobileBtn.addEventListener( 'click', () => {
+			nav.classList.add('menu-btn');
+		})
+		mobileBtnExit.addEventListener('click',() => {
+			nav.classList.remove('menu-btn');
+		})
+	</script>
+</body>
+</html>
