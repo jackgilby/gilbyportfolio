@@ -256,12 +256,13 @@ ul.primary-nav{
 
 .myworks-li{
 	text-align: center;
-	padding: 2em 1em;
+	padding: 1em 1em;
 	border-radius: 2em;
 	margin-left: auto;
 	margin-right: auto;
-	width: 15em;
+	width: 10em;
 	cursor: pointer;
+	padding: 1em;
 }
 
 .myworks-li:hover{
@@ -271,11 +272,14 @@ ul.primary-nav{
 	background: #3A4445;
 }
 
+.img-container{
+	margin: auto;
+}
+
 .works-img{
 	width: 10em;
 	height: 10em;
-	border-radius: 2em;
-	padding: 1em;
+	
 }
 
 @keyframes workshovering{
@@ -291,7 +295,7 @@ ul.primary-nav{
 	font-weight: 700;
 	text-decoration: none;
 	border-radius: 5em;
-	margin: 1em auto 0.2em auto;
+	margin: 0em auto 0.2em auto;
 	padding: .1em 0.4em;
 	display:inline-block;
 	color: white;
@@ -435,6 +439,23 @@ ul.primary-nav{
 	.about-right{
 		width: 70%;
 		margin: auto;
+	}
+	
+	.myworks-li{
+		text-align: center;
+		padding: 2em 1em;
+		border-radius: 2em;
+		margin-left: auto;
+		margin-right: auto;
+		width: 25em;
+		cursor: pointer;
+	}
+	
+	.works-img{
+		width: 20em;
+		height: 20em;
+		border-radius: 2em;
+		padding: 1em;
 	}
 }
 
