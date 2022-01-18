@@ -152,6 +152,17 @@ ul.primary-nav{
 	top: -35em;
 	z-index: -1;
 	overflow: hidden;
+	animation-name: fadein;
+	animation-duration: 10s;
+}
+
+@keyframes fadein{
+	from{
+		opacity: 0%;
+	}
+	to{
+		opacity: 100%;
+	}
 }
 
 .left-col{
@@ -233,6 +244,8 @@ ul.primary-nav{
 	top: 25em;
 	z-index: -1;
 	overflow: hidden;
+	animation-name: fadein;
+	animation-duration: 10s;
 }
 
 .gallery-1{
