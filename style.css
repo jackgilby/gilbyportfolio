@@ -262,7 +262,6 @@ ul.primary-nav{
 	margin-right: auto;
 	width: 10em;
 	cursor: pointer;
-	padding: 1em;
 }
 
 .myworks-li:hover{
@@ -320,6 +319,9 @@ ul.primary-nav{
 
 /*------------------ ABOUT SECTION -----------------------*/
 
+.about-section{
+	background: #3A4445;
+}
 .about-img{
 	width: 50%;
 	margin-top:3em; 
