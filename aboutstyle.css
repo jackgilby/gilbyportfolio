@@ -223,11 +223,14 @@ ul.primary-nav{
 	}
 }
 
+.right-col{
+	margin: auto;
+}
 
 .hero-img{
 	width: 90%;
-	margin-top:3em; 
 	display: block;
+	margin: auto;
 }
 
 /*--------------------- Gallery Img Left ------------------*/
